@@ -1,0 +1,371 @@
+<div>
+  <h4 class="text-muted mb-4">Xe</h4>
+  <div class="row mb-4">
+    <div class="col-md-12">
+      <div class="card border-4 rounded-4">
+        <div class="card-title mb-1 p-3">
+          <h5 class="col-md-11"></h5>
+        </div>
+        <div class="card-body">
+          <form enctype="multipart/form-data">
+            <div class="form-row">
+              <!--  -->
+              <div class="form-group col-md-3">
+                <div class="form-group">
+                  <input class="form-control rounded-4" placeholder="Mẫu xe..." type="text" />
+                </div>
+              </div>
+              <!--  -->
+              <div class="form-group col-md-1"></div>
+              <!--  -->
+              <div class="form-group col-md-2">
+                <select class="form-control rounded-4" id="exampleFormControlSelect1">
+                  <option>Audi</option>
+                  <option>Toyota</option>
+                  <option>BMW</option>
+                  <option>Mercedes</option>
+                  <option>Range Rover</option>
+                </select>
+              </div>
+              <div class="form-group col-md-1"></div>
+              <div class="form-group col-md-2">
+                <select class="form-control rounded-4" id="exampleFormControlSelect3">
+                  <option>Đang hoạt động</option>
+                  <option>Còn trống</option>
+                  <option>Bảo trì</option>
+                </select>
+              </div>
+              <div class="form-group col-md-1"></div>
+              <div class="form-group col-md-2">
+                <select class="form-control rounded-4" id="exampleFormControlSelect4">
+                  <option>Đang kinh doanh</option>
+                  <option>Ngừng kinh doanh</option>
+                </select>
+              </div>
+              <!--  -->
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-4"></div>
+                <div class="form-group col-md-2">
+                  <div class="form-group">
+                    <button type="button" class="btn btn-lightning rounded-4 mb-2 mr-2" id="search-car"><i class="fas fa-search"></i>Tìm
+                      kiếm</button>
+                  </div>
+                </div>
+                <div class="form-group col-md-2">
+                  <div class="form-group">
+                    <button type="button" class="btn btn-outline-lightning rounded-4 mb-2 mr-2" id="add-car"
+                      routerLink="/indexAdmin/caradd">
+                      <i class="fas fa-plus"></i> Thêm mới
+                    </button>
+                  </div>
+                </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mb-4">
+    <div class="col-md-12">
+      <div class="card border-4 rounded-4">
+        <div class="card-title mb-1 p-3">
+          <h5 class="col-md-11">Danh sách xe</h5>
+        </div>
+        <div class="card-body">
+        <!--  -->
+          
+        <!--  -->
+          <div class="table-responsive-md">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">STT</th>
+                  <th scope="col">Hình ảnh</th>
+                  <th scope="col">Hãng xe</th>
+                  <th scope="col">Mẫu xe</th>
+                  <th scope="col">Trạng thái</th>
+                  <th scope="col">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td><img class="img-fluid " alt="Responsive image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS3pApOLydVioLiS95ZhbQaDuY6Sv0WRYHJlw&usqp=CAU" 
+                    height="70px" width="90px"></td>
+                    <td>Jacob</td>
+                    <td>Otto</td>
+                  <td>
+                    <span class="badge badge-primary rounded-4 p-1">Fixed</span>
+                  </td>
+                  <td>
+                    <a class="btn btn-sm btn-outline-lightning rounded-4 mr-2 " id="info-car" data-toggle="modal"
+                      data-target=".bd-example-modal-lg">
+                      <i class="fas fa-info"></i>
+                    </a>
+                    <a class="btn btn-sm btn-outline-lightning rounded-4 mr-2 " id="edit-car" routerLink="/indexAdmin/carupdate">
+                      <i class="far fa-edit"></i>
+                    </a>
+                    <a class="btn btn-sm btn-outline-lightning rounded-4 mr2" id="del-car">
+                      <i class="far fa-trash-alt"></i>
+                    </a>
+                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+                      aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                          <!-- Begin Page Content -->
+                          <div class="container-fluid">
+                            <!-- Page Heading -->
+                            <h1 class="text-muted mb-4">Thông tin xe </h1>
+                            <!-- DataTales Example -->
+                            <div class="card shadow mb-4">
+                              <div class="card-body">
+                                <form enctype="multipart/form-data">
+                                  <div class="form-row">
+                                    <!-- Hãng xe -->
+                                    <div class="form-group col-md-4">
+                                      <div>
+                                        <label>Hãng xe</label>
+                                      </div>
+                                      <div>
+                                        <label>Toyota</label>
+                                      </div>
+                                    </div>
+                                    <!-- Mẫu xe -->
+                                    <div class="form-group col-md-4">
+                                      <div>
+                                        <label>Mẫu xe</label>
+                                      </div>
+                                      <div>
+                                        <label>Vios 1.5E</label>
+                                      </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="form-group col-md-1"></div>
+                                    <!-- Loại xe -->
+                                    <div class="form-group col-md-2">
+                                      <div>
+                                        <label>Loại xe</label>
+                                      </div>
+                                      <div>
+                                        <label>4 chỗ</label>
+                                      </div>
+                                    </div>
+                                    <!-- Cột 1 -->
+                                    <div class="form-group col-md-5">
+                                      <div class="form-group">
+                                        <div>
+                                          <label>Số khung</label>
+                                        </div>
+                                        <div>
+                                          <label>42G8E9411360</label>
+                                        </div>  
+                                      </div>
+                                      <!--  -->
+                                      <div class="form-group">
+                                        <div>
+                                          <label>Hệ thống dẫn động</label>
+                                        </div>
+                                        <div>
+                                          <label>FWD (Dẫn động cầu trước)</label>
+                                        </div>
+                                      </div>
+                                      <!--  -->
+                                      <div class="form-group">
+                                        <div>
+                                          <label>Loại nhiên liệu</label>
+                                        </div>
+                                        <div>
+                                          <label>Xăng</label>
+                                        </div>
+                                      </div>
+                                          <div class="form-group">
+                                            <label for="tinhnang">Tính năng</label>
+                                            <div class="form-group col-md-9">
+                                              <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1" disabled checked>
+                                                <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                                              </div>
+                                              <!--  -->
+                                              <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck2" disabled checked>
+                                                <label class="custom-control-label" for="customCheck2">Check this custom checkbox</label>
+                                              </div>
+                                              <!--  -->
+                                              <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck3" disabled checked>
+                                                <label class="custom-control-label" for="customCheck3">Check this custom checkbox</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <!-- Cột 2 -->
+                                    <div class="form-group col-md-1"></div>
+                                    <div class="form-group col-md-5">
+                                      <!--  -->
+                                      <div>
+                                        <label>Biển số</label>
+                                      </div>
+                                      <div>
+                                        <label>30E-206.32</label>
+                                      </div>
+                                      <!--  -->
+                                      <div class="form-group">
+                                        <div>
+                                          <label>Hộp số</label>
+                                        </div>
+                                        <div>
+                                          <label>Số tự động</label>
+                                        </div>
+                                      </div>
+                                      <!--  -->
+                                      <div class="form-group">
+                                        <div>
+                                          <label>Mức tiêu thụ</label>
+                                        </div>
+                                        <div>
+                                          <label>7,3L/100km</label>
+                                        </div>  
+                                      </div>
+
+                                    </div>
+                                  </div>
+                                  <!--  Ảnh liên quan -->
+                                  <hr>
+                                  <div class="card-title mb-1 p-3">
+                                    <h5 class="col-md-11">Ảnh liên quan</h5>
+                                  </div>
+                                  <!--  -->
+                                  <div class="form-row">
+                                    <!-- Cột 1 -->
+                                    <div class="form-group col-md-5">
+                                      <!-- Ảnh xe -->
+                                      <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Ảnh xe</label>
+                                      </div>
+                                      <div class="form-group">
+                                        <img class="img-fluid" alt="Responsive image"
+                                          src="https://kinhtechungkhoan.vn/stores/news_dataimages/thuuyen/022020/28/10/in_article/1731_xetoyota282.jpg">
+                                      </div>
+                                      <!-- Ảnh đăng kiểm -->
+                                      <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Ảnh đăng kiểm</label>
+                                      </div>
+                                      <div class="form-group">
+                                        <img class="img-fluid" alt="Responsive image"
+                                          src="https://static.carmudi.vn/otosvn/images/media/lMJR5HMfnF.jpg">
+                                      </div>
+                                    </div>
+                                    <!-- Cột 2 -->
+                                    <div class="form-group col-md-1"></div>
+                                    <div class="form-group col-md-5">
+                                      <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Ảnh đăng ký</label>
+                                      </div>
+                                      <div class="form-group">
+                                        <img class="img-fluid" alt="Responsive image"
+                                          src="https://taxitaithanhhung.vn/wp-content/uploads/2020/06/thu-tuc-dang-ki-xe-may1.jpg">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- Thông tin thêm -->
+                                  <hr>
+                                  <div class="card-title mb-1 p-3">
+                                    <h5 class="col-md-11">Thông tin thêm</h5>
+                                  </div>
+                                  <!-- Gía thuê -->
+                                        <div class="form-row">
+                                          <div class="form-group col-md-6">
+                                            <div class="form-group">
+                                              <div>
+                                                <label>Giá thuê</label>
+                                              </div>
+                                              <div>
+                                                <label>650.000/ngày</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                  <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                      <!-- Trạng thái -->
+                                      <div class="form-group">
+                                        <label>Trạng thái xe</label>
+                                        <div class="form-row">
+                                          <div class="form-group col-md-1"></div>
+                                          <div class="form-group col-md-3">
+                                            <input class="form-check-input" type="radio" name="status" id="areactive" value="areactive" disabled checked>
+                                            <label class="form-check-label" for="areactive">
+                                              Đang cho thuê
+                                            </label>
+                                          </div>
+                                          <!--  -->
+                                          <div class="form-group col-md-3">
+                                            <input class="form-check-input" type="radio" name="status" id="stillempty" value="stillempty" disabled>
+                                            <label class="form-check-label" for="stillempty">
+                                              Còn trống
+                                            </label>
+                                          </div>
+                                          <!--  -->
+                                          <div class="form-group col-md-3">
+                                            <input class="form-check-input" type="radio" name="status" id="maintenance" value="maintenance" disabled>
+                                            <label class="form-check-label" for="maintenance">
+                                              Bảo trì 
+                                            </label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="form-group col-md-6">
+                                      <!-- Tình trạng xe -->
+                                      <div class="form-group">
+                                        <label>Tình trạng xe</label>
+                                        <div class="form-row">
+                                          <div class="form-group col-md-1"></div>
+                                          <div class="form-group col-md-3">
+                                            <input class="form-check-input" type="radio" name="roles" id="CEO" value="CEO" disabled checked>
+                                            <label class="form-check-label" for="CEO">
+                                              Đang kinh doanh
+                                            </label>
+                                          </div>
+                                          <div class="form-group col-md-1"></div>
+                                          <div class="form-group col-md-3">
+                                            <input class="form-check-input" type="radio" name="roles" id="Staff" value="Staff" disabled>
+                                            <label class="form-check-label" for="Staff">
+                                              Ngừng kinh doanh
+                                            </label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- Mô tả -->
+                                  <div class="form-row">
+                                    <div class="form-group col-md-11">
+                                      <div class="form-group">
+                                        <div>
+                                          <label>Mô tả</label>
+                                        </div>
+                                        <div>
+                                          <label>Xe đi thường xuyên gặp tai nạn. Thuê thì thuê không thuê thì thuê!</label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

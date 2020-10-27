@@ -1,0 +1,83 @@
+<div>
+  <h4 class="text-muted mb-4">Xe</h4>
+  <router-outlet></router-outlet>
+
+  <div class="row mb-4">
+    <div class="col-md-12">
+      <div class="card border-4 rounded-4">
+        <div class="card-title mb-1 p-3">
+          <h5 class="col-md-11"></h5>
+        </div>
+        <div class="card-body">
+          <form enctype="multipart/form-data">
+           
+            <div class="form-row">
+              <!--  --> <div class="form-group col-md-1"></div>
+              <div class="form-group col-md-4">
+                <div class="form-group">
+                  <input class="form-control rounded-4" placeholder="Hãng xe..." type="text" />
+                </div>
+              </div>
+              <!--  -->
+              <div class="form-group col-md-1"></div>
+                <div class="form-group col-md-2">
+                  <div class="form-group">
+                    <button type="button" class="btn btn-lightning rounded-4 mb-2 mr-2" id="search-brand"><i class="fas fa-search"></i>Tìm
+                      kiếm</button>
+                  </div>
+                </div>
+                <div class="form-group col-md-2">
+                  <div class="form-group">
+                    <button type="button" class="btn btn-outline-lightning rounded-4 mb-2 mr-2" id="add-brand"
+                      routerLink="/indexAdmin/brandmanager/brandadd">
+                      <i class="fas fa-plus"></i> Thêm mới
+                    </button>
+                  </div>
+                </div>
+              <!--  -->
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mb-4">
+    <div class="col-md-12">
+      <div class="card border-4 rounded-4">
+        <div class="card-title mb-1 p-3">
+          <h5 class="col-md-11">Danh sách hãng xe</h5>
+        </div>
+        <div class="card-body">
+        <!--  -->
+         
+      
+        <!--  -->
+          <div class="table-responsive-md">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">STT</th>
+                  <th scope="col">Tên hãng</th>
+                  <th scope="col">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Otto</td>
+                  <td>
+                    <a class="btn btn-sm btn-outline-lightning rounded-4 mr-2 " id="edit-brand" routerLink="/indexAdmin/brandmanager/brandupdate">
+                      <i class="far fa-edit"></i>
+                    </a>
+                    <a class="btn btn-sm btn-outline-lightning rounded-4" id="del-brand">
+                      <i class="far fa-trash-alt"></i>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

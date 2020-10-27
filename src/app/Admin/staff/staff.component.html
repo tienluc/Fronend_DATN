@@ -1,0 +1,325 @@
+<div>
+
+  <h4 class="text-muted mb-4">Tài khoản</h4>
+  <div class="row mb-4">
+    <div class="col-md-12">
+      <div class="card border-4 rounded-4">
+        <div class="card-title mb-1 p-3">
+          <h5 class="col-md-11"></h5>
+        </div>
+        <div class="card-body">
+          <form enctype="multipart/form-data">
+            <div class="form-row">
+              <!--  -->
+              <div class="form-group col-md-4">
+                <div class="form-group">
+                  <input class="form-control rounded-4" placeholder="Tài khoản...." type="text" />
+                </div>
+              </div>
+              <!--  -->
+              <div class="form-group col-md-1"></div>
+              <!--  -->
+              <div class="form-group col-md-4">
+                <div class="form-group">
+                  <input class="form-control rounded-4" placeholder="Họ và Tên...." type="text" />
+                </div>
+              </div>
+              <div class="form-group col-md-1"></div>
+              <div class="form-group col-md-2">
+                <select class="form-control rounded-4" id="exampleFormControlSelect3">
+                  <option>Admin</option>
+                  <option>Nhân viên</option>
+                </select>
+              </div>
+              <!--  -->
+              <div class="form-group col-md-4"></div>
+              <div class="form-group col-md-2">
+                <div class="form-group">
+                  <button type="button" class="btn btn-lightning rounded-4 mb-2 mr-2" id="search-staff" ><i class="fas fa-search"></i>Tìm
+                    kiếm</button>
+                </div>
+              </div>
+              <div class="form-group col-md-2">
+                <div class="form-group">
+                  <button type="button" class="btn btn-outline-lightning rounded-4 mb-2 mr-2" id="add-staff"
+                    routerLink="/indexAdmin/addstaff">
+                    <i class="fas fa-plus"></i> Thêm mới
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row mb-4">
+
+    <div class="col-md-12">
+      <div class="card border-4 rounded-4">
+        <div class="card-title mb-1 p-3">
+          <h5 class="col-md-11">Danh sách nhân viên</h5>
+
+        </div>
+
+        <div class="card-body">
+
+          <!--  -->
+          
+          <!--  -->
+          <div class="table-responsive-md">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">STT</th>
+                  <th scope="col">Hình ảnh</th>
+                  <th scope="col">Tài khoản</th>
+                  <th scope="col">Họ tên</th>
+                  <th scope="col">Chức vụ</th>
+                  <th scope="col">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td><img class="img-fluid " alt="Responsive image"
+                      src="https://1.bp.blogspot.com/-yPtDug12hyk/XqZl2ok52II/AAAAAAAAjO0/w2XS77KIT7sPrSGthsYwgdKT4UrWZ6c3gCLcBGAsYHQ/s1600/Anh-avatar-dep-cho-con-trai%2B%252824%2529.jpg"
+                      height="40px" width="30px"></td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>
+                    <span class="badge badge-primary rounded-4 p-1">Fixed</span>
+                  </td>
+                  <td>
+                    <a class="btn btn-sm btn-outline-lightning rounded-4 mr-2 " id="info-staff" data-toggle="modal"
+                      data-target=".bd-example-modal-lg">
+                      <i class="fas fa-info"></i>
+                    </a>
+                    <a class="btn btn-sm btn-outline-lightning rounded-4 mr-2 " id="edit-staff" routerLink="/indexAdmin/updatestaff">
+                      <i class="far fa-edit"></i>
+                    </a>
+                    <a class="btn btn-sm btn-outline-lightning rounded-4" id="del-staff">
+                      <i class="far fa-trash-alt"></i>
+                    </a>
+                    <!-- start popup -->
+                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+                      aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                          <!-- Begin Page Content -->
+                          <div class="container-fluid">
+                            <!-- Page Heading -->
+                            <div class="modal-header">
+                              <h4 class="text-muted mb-4">Thông tin nhân viên</h4>
+
+                            </div>
+
+                            <!-- DataTales Example -->
+                            <div class="card shadow mb-4">
+
+                              <div class="card-body">
+
+                                <!--  -->
+
+                                <form enctype="multipart/form-data">
+                                  <div class="form-row">
+
+
+                                    <!-- Cột 1 -->
+
+                                    <div class="form-group col-md-2">
+                                      <div class="form-group">
+                                        <label for="username">Ảnh đại diện</label>
+                                        <br>
+                                        <img class="img-fluid" alt="Responsive image"
+                                          src="https://1.bp.blogspot.com/-yPtDug12hyk/XqZl2ok52II/AAAAAAAAjO0/w2XS77KIT7sPrSGthsYwgdKT4UrWZ6c3gCLcBGAsYHQ/s1600/Anh-avatar-dep-cho-con-trai%2B%252824%2529.jpg">
+                                      </div>
+                                    </div>
+                                    <div class="form-group col-md-1"></div>
+
+                                    <!--Cột 2  -->
+
+                                    <div class="form-group col-md-4">
+                                      <div class="form-group">
+                                        <div>
+                                          <label>Tài khoản</label>
+                                        </div>
+                                        <div>
+                                          <label>lucntph07957@fpt.edu.vn</label>
+                                        </div>
+                                      </div>
+                                      <!-- họ tên -->
+                                      <div class="form-group">
+                                        <div>
+                                          <label>Họ Tên</label>
+                                        </div>
+                                        <div>
+                                          <label>Nguyễn Tiến Lực</label>
+                                        </div>
+                                      </div>
+                                      <!-- Giới tính -->
+                                      <div class="form-group">
+                                        <label>Giới tính</label>
+                                        <div class="form-row">
+                                          <div class="form-group col-md-1"></div>
+                                          <div class="form-group col-md-3">
+                                            <input class="form-check-input" disabled type="radio" name="genter"
+                                              id="male" value="male" checked>
+                                            <label class="form-check-label" for="male">
+                                              Nam
+                                            </label>
+                                          </div>
+                                          <!--  -->
+                                          <div class="form-group col-md-3">
+                                            <input class="form-check-input" disabled type="radio" name="genter"
+                                              id="female" value="female">
+                                            <label class="form-check-label" for="female">
+                                              Nữ
+                                            </label>
+                                          </div>
+                                          <!--  -->
+                                          <div class="form-group col-md-3">
+                                            <input class="form-check-input" disabled type="radio" name="genter"
+                                              id="other" value="other">
+                                            <label class="form-check-label" for="other">
+                                              Khác
+                                            </label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!--Email  -->
+                                      <div class="form-group">
+                                        <div>
+                                          <label>Email</label>
+                                        </div>
+                                        <div>
+                                          <label>lucntph07957@fpt.edu.vn</label>
+                                        </div>
+                                      </div>
+                                      <!-- Bằng lái xe -->
+                                      <div class="form-group">
+                                        <label>Bằng lái xe</label>
+                                        <br>
+                                        <img class="img-fluid" alt="Responsive image"
+                                          src="https://lh3.googleusercontent.com/proxy/CCQwGL8GYvq5zztAVYko7rBnr70Sgu5xFEiFIZykSBs729VfI6qBubClPCfpKT1qSE6qZ0px8viqUasYw4f-sgEo2XWmoSbmCaWQexkr57KUlxJX_jU">
+                                      </div>
+                                    </div>
+
+                                    <!--Cột 3  -->
+                                    <div class="form-group col-md-1"></div>
+                                    <div class="form-group col-md-4">
+                                      <div class="form-group">
+                                        <div>
+                                          <label>Mật khẩu</label>
+                                        </div>
+                                        <div>
+                                          *************
+                                        </div>
+                                      </div>
+                                      <!-- Số điện thoại -->
+                                      <div class="form-group">
+                                        <div>
+                                          <label>Số điện thoại</label>
+                                        </div>
+                                        <div>
+                                          0389202805
+                                        </div>
+                                      </div>
+                                      <!-- Chức vụ -->
+                                      <div class="form-group">
+                                        <label>Chức vụ</label>
+                                        <div class="form-row">
+                                          <div class="form-group col-md-1"></div>
+                                          <div class="form-group col-md-4">
+                                            <input disabled class="form-check-input" type="radio" name="roles" id="CEO"
+                                              value="CEO" checked>
+                                            <label class="form-check-label" for="CEO">
+                                              Giám đốc
+                                            </label>
+                                          </div>
+                                          <div class="form-group col-md-1"></div>
+                                          <div class="form-group col-md-4">
+                                            <input disabled class="form-check-input" type="radio" name="roles"
+                                              id="Staff" value="Staff">
+                                            <label class="form-check-label" for="Staff">
+                                              nhân viên
+                                            </label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- Căn cước công dân -->
+                                      <div class="form-group">
+                                        <div>
+                                          <label>Căn cước công dân</label>
+                                        </div>
+                                        <div>
+                                          001200007658
+                                        </div>
+                                      </div>
+                                      <!--  -->
+                                      <div class="form-group">
+                                        <label>Ảnh hộ khẩu</label>
+                                        <br>
+                                        <img class="img-fluid" alt="Responsive image"
+                                          src="https://luatquochuy.vn/wp-content/uploads/2018/08/thu-tuc-chuyen-ho-khau-tu-phuong-nay-sang-phuong-khac.jpg">
+                                      </div>
+                                      <!--  -->
+                                    </div>
+                                  </div>
+                                  <div class="form-row">
+                                    <div class="form-group col-md-3"></div>
+                                    <div class="form-group col-md-8">
+                                      <div class="form-group">
+                                        <div>
+                                          <label for="exampleFormControlTextarea1">Địa chỉ</label>
+                                        </div>
+                                        <div>
+                                          Thôn Hoàng Long , Xã Đặng Xá,Gia Lâm, Hà Nội
+                                        </div>
+                                      </div>
+                                      <!--  -->
+                                      <div class="form-group">
+                                        <label>Trạng thái</label>
+                                        <div class="form-row">
+                                          <div class="form-group col-md-1"></div>
+                                          <div class="form-group col-md-5">
+                                            <input disabled class="form-check-input" type="radio" name="isdelete"
+                                              id="notyet" value="notyet" checked>
+                                            <label class="form-check-label" for="notyet">
+                                              Đang hoạt động
+                                            </label>
+                                          </div>
+                                          <div class="form-group col-md-1"></div>
+                                          <div class="form-group col-md-3">
+                                            <input disabled class="form-check-input" type="radio" name="isdelete"
+                                              id="deleted" value="deleted">
+                                            <label class="form-check-label" for="deleted">
+                                              Đã xóa
+                                            </label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end popup -->
+                  </td>
+                </tr>
+               
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>

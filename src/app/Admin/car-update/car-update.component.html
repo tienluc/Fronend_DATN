@@ -1,0 +1,274 @@
+<!-- Begin Page Content -->
+<div class="container-fluid">
+  <!-- Page Heading -->
+  <h1 class="text-muted mb-4">Sửa thông tin xe</h1>
+  <!-- DataTales Example -->
+  <div class="card shadow mb-4">
+    <div class="card-title mb-1 p-3">
+      <h5 class="col-md-11">Thông số xe</h5>
+    </div>
+    <div class="card-body">
+      <form enctype="multipart/form-data">
+        <div class="form-row">
+          <!-- Hãng xe -->
+          <div class="form-group col-md-4">
+            <label for="exampleFormControlSelect1">Hãng xe</label>
+            <select class="form-control rounded-4" id="exampleFormControlSelect1">
+              <option>Audi</option>
+              <option>Toyota</option>
+              <option>BMW</option>
+              <option>Mercedes</option>
+              <option>Range Rover</option>
+            </select>
+          </div>
+          <!-- Mẫu xe -->
+          <div class="form-group col-md-4">
+            <label for="exampleFormControlSelect2">Mẫu xe</label>
+            <select class="form-control rounded-4" id="exampleFormControlSelect2">
+              <option>Audi r8</option>
+              <option>Toyota Corolla Cross</option>
+              <option>BMW i8</option>
+              <option>Mec glc 300</option>
+              <option>Range Rover Sport</option>
+            </select>
+          </div>
+          <!--  -->
+          <div class="form-group col-md-1"></div>
+          <!-- Loại xe -->
+          <div class="form-group col-md-2">
+            <label for="exampleFormControlSelect3">Loại xe</label>
+            <select class="form-control rounded-4" id="exampleFormControlSelect3">
+              <option>4 chỗ</option>
+              <option>7 chỗ</option>
+            </select>
+          </div>
+          <!-- Cột 1 -->
+          <div class="form-group col-md-5">
+            <div class="form-group">
+              <label for="sokhung">Số khung</label>
+              <input type="text" class="form-control rounded-4" id="sokhung" name="sokhung">
+            </div>
+            <!--  -->
+            <div class="form-group">
+              <label for="exampleFormControlSelect4">Hệ thống dẫn động</label>
+              <select class="form-control rounded-4" id="exampleFormControlSelect5">
+                <option>FWD (Dẫn động cầu trước)</option>
+                <option>RWD (Dẫn động cầu sau)</option>
+                <option>AWD (Dẫn 4 bánh toàn thời gian)</option>
+                <option>4WD (Dẫn 4 bánh bán thời gian)</option>
+              </select>
+            </div>
+            <!--  -->
+            <div class="form-group">
+              <label for="nhienlieu">Loại nhiên liệu</label>
+              <input type="text" class="form-control rounded-4" id="nhienlieu" name="nhienlieu">
+              </div>
+                <div class="form-group">
+                  <label for="tinhnang">Tính năng</label>
+                  <div class="form-group col-md-9">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="customCheck1">
+                      <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                    </div>
+                    <!--  -->
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="customCheck2">
+                      <label class="custom-control-label" for="customCheck2">Check this custom checkbox</label>
+                    </div>
+                    <!--  -->
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="customCheck3">
+                      <label class="custom-control-label" for="customCheck3">Check this custom checkbox</label>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <!-- Cột 2 -->
+          <div class="form-group col-md-1"></div>
+          <div class="form-group col-md-5">
+            <div class="form-group">
+              <label for="bienSo">Biển số</label>
+              <input type="text" class="form-control rounded-4" id="bienSo" name="bienSo">
+            </div>
+            <!--  -->
+            <div class="form-group">
+              <label for="exampleFormControlSelect6">Hộp số</label>
+              <select class="form-control rounded-4" id="exampleFormControlSelect6">
+                <option>Số sàn</option>
+                <option>Số tự động</option>
+                <option>Số tự động vô cấp CVT </option>
+                <option>Ly hợp kép</option>
+              </select>
+            </div>
+            <!--  -->
+            <div class="form-group">
+              <label for="tieuThu">Mức tiêu thụ nhiên liệu</label>
+              <input type="text" class="form-control rounded-4" id="tieuThu" name="tieuThu">
+            </div>
+
+          </div>
+        </div>
+        <!--  Ảnh liên quan -->
+        <hr>
+        <div class="card-title mb-1 p-3">
+          <h5 class="col-md-11">Ảnh liên quan</h5>
+        </div>
+        <!--  -->
+        <div class="form-row">
+          <!-- Cột 1 -->
+          <div class="form-group col-md-5">
+            <!-- Ảnh xe -->
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Ảnh xe</label>
+            </div>
+            <div class="form-group">
+              <img class="img-fluid" alt="Responsive image"
+                src="https://kinhtechungkhoan.vn/stores/news_dataimages/thuuyen/022020/28/10/in_article/1731_xetoyota282.jpg">
+            </div>
+            <div class="form-group">
+              <!-- <label>Custom file input</label> -->
+              <div class="custom-file">
+                <div class="upload-btn-wrapper">
+                  <button class="btnUpload-Admin" id="imgCar">Upload a file  <i class="fas fa-cloud-upload-alt"></i></button>
+                  <input type="file" name="myfile" />
+                </div>
+                <!-- <label *ngIf="ProductImage" class="text-danger"> {{ProductImage}}</label> -->
+              </div>
+            </div>
+            <!-- Ảnh đăng kiểm -->
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Ảnh đăng kiểm</label>
+            </div>
+            <div class="form-group">
+              <img class="img-fluid" alt="Responsive image"
+                src="https://static.carmudi.vn/otosvn/images/media/lMJR5HMfnF.jpg">
+            </div>
+            <div class="form-group">
+              <!-- <label>Custom file input</label> -->
+              <div class="custom-file">
+                <div class="upload-btn-wrapper">
+                  <button class="btnUpload-Admin" id="imgRegistry">Upload a file  <i class="fas fa-cloud-upload-alt"></i></button>
+                  <input type="file" name="myfile" />
+                </div>
+                <!-- <label *ngIf="ProductImage" class="text-danger"> {{ProductImage}}</label> -->
+              </div>
+            </div>
+          </div>
+          <!-- Cột 2 -->
+          <div class="form-group col-md-1"></div>
+          <div class="form-group col-md-5">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Ảnh đăng ký</label>
+            </div>
+            <div class="form-group">
+              <img class="img-fluid" alt="Responsive image"
+                src="https://taxitaithanhhung.vn/wp-content/uploads/2020/06/thu-tuc-dang-ki-xe-may1.jpg">
+            </div>
+            <div class="form-group">
+              <!-- <label>Custom file input</label> -->
+              <div class="custom-file">
+                <div class="upload-btn-wrapper">
+                  <button class="btnUpload-Admin" id="imgRegister">Upload a file  <i class="fas fa-cloud-upload-alt"></i></button>
+                  <input type="file" name="myfile" />
+                </div>
+                <!-- <label *ngIf="ProductImage" class="text-danger"> {{ProductImage}}</label> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Thông tin thêm -->
+        <hr>
+        <div class="card-title mb-1 p-3">
+          <h5 class="col-md-11">Thông tin thêm</h5>
+        </div>
+        <!-- Gía thuê -->
+              <div class="form-row">
+                <div class="form-group col-md-5">
+                  <div class="form-group">
+                    <label for="gia">Giá thuê</label>
+                    <input type="text" class="form-control rounded-4" id="gia" name="gia">
+                  </div>
+                </div>
+              </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <!-- Trạng thái -->
+            <div class="form-group">
+              <label>Trạng thái xe</label>
+              <div class="form-row">
+                <div class="form-group col-md-1"></div>
+                <div class="form-group col-md-4">
+                  <input class="form-check-input" type="radio" name="status" id="areactive" value="areactive" checked>
+                  <label class="form-check-label" for="areactive">
+                    Đang cho thuê
+                  </label>
+                </div>
+                <!--  -->
+                <div class="form-group col-md-3">
+                  <input class="form-check-input" type="radio" name="status" id="stillempty" value="stillempty">
+                  <label class="form-check-label" for="stillempty">
+                    Còn trống
+                  </label>
+                </div>
+                <!--  -->
+                <div class="form-group col-md-3">
+                  <input class="form-check-input" type="radio" name="status" id="maintenance" value="maintenance">
+                  <label class="form-check-label" for="maintenance">
+                    Bảo trì 
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="form-group col-md-6">
+            <!-- Tình trạng xe -->
+            <div class="form-group">
+              <label>Tình trạng xe</label>
+              <div class="form-row">
+                <div class="form-group col-md-1"></div>
+                <div class="form-group col-md-4">
+                  <input class="form-check-input" type="radio" name="roles" id="CEO" value="CEO" checked>
+                  <label class="form-check-label" for="CEO">
+                    Đang kinh doanh
+                  </label>
+                </div>
+                <div class="form-group col-md-1"></div>
+                <div class="form-group col-md-4">
+                  <input class="form-check-input" type="radio" name="roles" id="Staff" value="Staff">
+                  <label class="form-check-label" for="Staff">
+                    Ngừng kinh doanh
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Mô tả -->
+        <div class="form-row">
+          <div class="form-group col-md-11">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Mô tả</label>
+              <textarea class="form-control rounded-4" id="exampleFormControlTextarea1" rows="4"></textarea>
+            </div>
+          </div>
+        </div>
+        <!-- buttons -->
+        <div class="form-group">
+          <div class="form-row">
+            <div class="form-group col-md-8"></div>
+            <div class="form-group col-md-2">
+              <button type="button" class="btn btn-lightning rounded-4 mb-2 mr-2" id="update-car"> <i class="fas fa-edit"></i> Cập nhật</button>
+
+            </div>
+            <div class="form-group col-md-1">
+              <button type="button" class="btn btn-outline-lightning rounded-4 mb-2" id="exit-carAdd" routerLink="/indexAdmin/carmanager"><i class="far fa-arrow-alt-circle-left"></i>  Trở về</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+

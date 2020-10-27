@@ -1,0 +1,113 @@
+<aside class="sidebar shadow-sm">
+
+  <div class="sidebar-profile d-flex flex-column justify-content-center pt-5 pb-3">
+    <div class="picture-wrapper mb-4">
+      <div class="user-picture m-auto">
+        <img src="../../../assets/Admin/img/user.jpg" class="img-fluid" alt="">
+      </div>
+    </div>
+    <div class="profile-details text-center pb-4">
+      <p class="mb-0 text-uppercase name">Jhon Doe</p>
+      <small class="text-uppercase role">Administrator</small>
+    </div>
+  </div>
+  <div class="sidebar-search pt-1 pb-1 pl-3 pr-3">
+    <input type="search" class="form-control rounded-pill" name="search" placeholder="Search ...">
+  </div>
+  <nav class="sidebar-menu pt-3 pb-3">
+    <div class="menu-header mt-3 mb-2">
+      Components
+    </div>
+
+    <ul class="menu-items navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+      <li>
+        <a href="#" routerLink="dashboard" routerLinkActive="active">
+          <i class="fa fa-tv"></i>
+          <span>Dashboard</span>
+          <span class="badge badge-warning rounded-0 text-dark p-1">NEW</span>
+        </a>
+      </li>
+      <!-- Nav Item - Pages Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+          aria-controls="collapseTwo">
+          <i class="fas fa-users"></i>
+          <span>Tài khoản</span>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+
+            <a class="collapse-item" routerLink="staffmanager" routerLinkActive="active">
+              <i class="fas fa-address-card"></i> <span>Nhân viên</span>
+            </a>
+
+            <a class="collapse-item" routerLink="customermanager" routerLinkActive="active">
+              <i class="fas fa-user-friends"></i> <span>Khách hàng</span>
+            </a>
+
+          </div>
+        </div>
+      </li>
+      <!-- Menu xe -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+          aria-expanded="true" aria-controls="collapseUtilities">
+          <i class="fas fa-car"></i>
+          <span>Xe</span>
+        </a>
+        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+
+            <a class="collapse-item" routerLink="carmanager" routerLinkActive="active">
+              <i class="fas fa-car-side"></i> <span>Danh sách xe</span>
+            </a>
+
+            <a class="collapse-item" routerLink="brandmanager" routerLinkActive="active">
+              <i class="fas fa-trademark"></i> <span>Quản lý hãng xe</span>
+            </a>
+
+            <a class="collapse-item" routerLink="modelmanager" routerLinkActive="active">
+              <i class="fas fa-receipt"></i> <span>Quản lý mẫu xe</span>
+            </a>
+
+            <a class="collapse-item" routerLink="featuremanager" routerLinkActive="active">
+              <i class="fas fa-clipboard-check"></i> <span>Danh sách tính năng xe</span>
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <!-- <li>
+        <a href="#" routerLink="forms" routerLinkActive="active">
+          <i class="fas fa-gem"></i>
+          <span>Forms</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" routerLink="tables" routerLinkActive="active">
+          <i class="fa fa-table"></i>
+          <span>Tables</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" routerLink="typography" routerLinkActive="active">
+          <i class="fa fa-align-center"></i>
+          <span>Typography</span>
+        </a>
+      </li> -->
+
+      <li>
+        <a href="#" routerLink="maps" routerLinkActive="active">
+          <i class="fa fa-globe"></i>
+          <span>Maps</span>
+        </a>
+      </li>
+      <!-- <li>
+        <a href="#" routerLink="notifications" routerLinkActive="active">
+          <i class="fas fa-bell"></i>
+          <span>Notifications</span>
+        </a>
+      </li> -->
+    </ul>
+  </nav>
+</aside>

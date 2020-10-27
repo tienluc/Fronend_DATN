@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+$bg-color:#f2f3f8;
+$navbar-bg-color : #000103;
+$navbar-color:#fdfdfd;
+$sidebar-bg-color:#fff;
+$sidebar-color:#000000;
+$sidebar-icon-color:#000000;
+$border-color: #f2f3f8;
+
+body {
+  font-family: 'Poppins','Roboto', sans-serif;
+  font-size: .9rem;
+}
+
+
+.wrapper.default-theme {
+
+  background: $bg-color;
+
+  nav.navbar {
+    background: $navbar-bg-color;
+    border-color: rgba($navbar-color, .3);
+
+    .navbar-brand {
+      color: lighten($navbar-color, 25%);
+    }
+
+    .left-nav {
+      input.navbar-search {
+        background: #282f48;
+        color:$navbar-color;
+        &::placeholder{
+          color:rgba($navbar-color, .6);
+        }
+      }
+    }
+
+    .right-nav {
+      background: $navbar-bg-color;
+    }
+
+    .nav-link {
+      color: $navbar-color;
+
+      i {
+        border-color: $navbar-color;
+        background: #013353;
+      }
+
+      &:hover {
+        color: lighten($navbar-color, 15%);
+      }
+    }
+
+    .nav-alert {
+      border-color: #2f3546;
+
+      &.notifications {
+        background-color: #ff61c5;
+        box-shadow: 0px 0px 4px #ff61c5;
+
+      }
+
+      &.messages {
+        background-color: #61b8ff;
+        box-shadow: 0px 0px 4px #61b8ff;
+
+      }
+    }
+  }
+
+  main {
+    .overlay {
+      background: #242939;
+    }
+
+    .sidebar {
+      background: $sidebar-bg-color;
+
+      >div {
+        border-color: rgba($sidebar-color, .1);
+      }
+
+      a.sidebar-link {
+        color: $sidebar-color;
+
+      }
+
+      .sidebar-profile {
+        .name {
+          color: $sidebar-color;
+        }
+
+        .role {
+          color: rgba($sidebar-color, .8);
+        }
+      }
+
+      .sidebar-menu {
+        .menu-header {
+          color: rgba($sidebar-color, .5);
+        }
+
+        .menu-items {
+          a {
+            color: rgba($sidebar-color, .7);
+
+            i {
+              color: $sidebar-icon-color;
+              // color: #abb7da;
+              // color: rgba(140, 165, 239, 0.6);
+              border: none;
+              width: auto;
+              font-size: 1rem;
+            }
+
+            &:hover,
+            &.active {
+              background: #000000;
+              color: #0099ff;
+
+              i {
+                color: #0099ff;
+              }
+            }
+          }
+        }
+        
+      }
+    }
+  }
+
+  // .card {
+  //   box-shadow: 1px 1px 2px rgba(#5b6582, .1);
+
+  //   .card-title {
+  //     color: rgba($sidebar-color, .8);
+  //   }
+
+  //   .card-icon {
+  //     i {
+  //       color: #98a4c7;
+  //     }
+  //   }
+
+  //   .card-footer {
+  //     border-top: 1px solid $border-color;
+  //     background: none;
+  //   }
+
+  //   .card-title {
+  //     border-bottom: 1px solid $border-color;
+  //   }
+  // }
+
+  .table {
+
+    th,
+    td {
+      border-top: 1px solid darken($border-color,2%);
+    }
+
+    thead th {
+      border-bottom: 2px solid darken($border-color,2%);
+    }
+
+    &.table-striped tbody tr:nth-of-type(odd) {
+      background-color: lighten($border-color,1%);
+    }
+
+    &.table-hover tbody tr:hover {
+      background-color: lighten($border-color, 1%);
+    }
+  }
+
+  .btn {
+    font-size: .9rem;
+//////Start btn-lightning/////
+    &.btn-lightning {
+      color: #f0f3ff;
+      background-color: #000000;
+      border-color: #000000;
+
+      &#search-staff:hover {
+        background-color: #3366cc;
+        border-color: #3366cc;
+      }
+
+      &#search-cus:hover {
+        @extend #search-staff;
+      }
+
+      &#search-car:hover {
+        @extend #search-staff;
+      }
+
+      &#search-brand:hover {
+        @extend #search-staff;
+      }
+
+      &#search-model:hover {
+        @extend #search-staff;
+      }
+
+      &#search-feature:hover {
+        @extend #search-staff;
+      }
+
+      &#save-staff:hover {
+        @extend #search-staff;
+      }
+
+      &#save-car:hover {
+        @extend #search-staff;
+      }
+
+      &#save-brand:hover {
+        @extend #search-staff;
+      }
+
+      &#save-model:hover {
+        @extend #search-staff;
+      }
+
+      &#save-feature:hover {
+        @extend #search-staff;
+      }
+
+      &#update-staff:hover {
+        @extend #search-staff;
+      }
+
+      &#update-car:hover {
+        @extend #search-staff;
+      }
+
+      &#update-brand:hover {
+        @extend #search-staff;
+      }
+      
+      &#update-model:hover {
+        @extend #search-staff;
+      }
+      
+      &#update-feature:hover {
+        @extend #search-staff;
+      }
+    }
+//////End btn-lightning/////
+
+//////Start btn-outline-lightning/////
+
+    &.btn-outline-lightning {
+      color: #000000;
+      background-color: transparent;
+      border-color: #000000;
+
+      &#add-staff:hover {
+        color: #ffffff;
+        background-color: #00bb00;
+        border-color: #00bb00;
+      }
+
+      &#add-car:hover {
+        @extend #add-staff;
+      }
+
+      &#add-brand:hover {
+        @extend #add-staff;
+      }
+
+      &#add-model:hover {
+        @extend #add-staff;
+      }
+
+      &#add-feature:hover {
+        @extend #add-staff;
+      }
+
+      &#info-staff:hover {
+        color: #ffffff;
+        background-color: #5b6582;
+        border-color: #5b6582;
+      }
+
+      &#info-cus:hover {
+        @extend #info-staff;
+      }
+
+      &#info-car:hover {
+        @extend #info-staff;
+      }
+
+      &#edit-staff:hover {
+        color: #000000;
+        background-color: #ffff00;
+        border-color: #ffff00;
+      }
+
+      &#edit-car:hover {
+        @extend #edit-staff;
+      }
+      
+      &#edit-brand:hover {
+        @extend #edit-staff;
+      }
+
+      &#edit-model:hover {
+        @extend #edit-staff;
+      }
+
+      &#edit-feature:hover {
+        @extend #edit-staff;
+      }
+
+      &#del-staff:hover {
+        color: #ffffff;
+        background-color: #ff0000;
+        border-color: #ff0000;
+      }
+
+      &#del-cus:hover {
+        @extend #del-staff;
+      }
+
+      &#del-car:hover {
+        @extend #del-staff;
+      }
+
+      &#del-brand:hover {
+        @extend #del-staff;
+      }
+
+      &#del-model:hover {
+        @extend #del-staff;
+      }
+
+      &#del-feature:hover {
+        @extend #del-staff;
+      }
+
+      &#exit-staff-add:hover {
+        @extend #del-staff;
+      }
+
+      &#exit-editStaff:hover {
+        @extend #del-staff;
+      }
+
+      &#exit-carAdd:hover {
+        @extend #del-staff; 
+      }
+
+      &#exit-carEdit:hover {
+        @extend #del-staff;
+      }
+
+      &#exit-addBrand:hover {
+        @extend #del-staff;
+      }
+
+      &#exit-editBrand:hover {
+        @extend #del-staff;
+      }
+
+      &#exit-addModel:hover {
+        @extend #del-staff;
+      }
+
+      &#exit-editModel:hover {
+        @extend #del-staff;
+      }
+
+      &#exit-addFeature:hover {
+        @extend #del-staff;
+      }
+      
+      &#exit-editFeature:hover {
+        @extend #del-staff;
+      }
+    }
+//////End btn-outline-lightning/////
+
+  }
+
+  .form-control {
+    font-size: .9rem;
+  }
+
+  .text-lightning {
+    color: #98a4c7;
+  }
+
+  .upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    }
+    
+  
+    .upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    }
+  
+    .btnUpload-Admin{
+    border: 2px solid #00bb00;
+    color: rgb(255, 255, 255);
+    background-color: #00bb00;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    }
+    
+}

@@ -1,0 +1,56 @@
+<!-- Begin Page Content -->
+<div class="container-fluid">
+  <!-- Page Heading -->
+  <h1 class="text-muted mb-4">Sửa thông tin mẫu xe</h1>
+  <!-- DataTales Example -->
+  <div class="card shadow mb-4">
+    <div class="card-title mb-1 p-3">
+      <h5 class="col-md-11">Điền thông tin mẫu xe</h5>
+    </div>
+    <div class="card-body">
+      <form enctype="multipart/form-data">
+        <div class="form-row">
+          <!-- Cột 1 -->
+          <div class="form-group col-md-5">
+            <div class="form-group">
+              <label for="sokhung">Mẫu xe</label>
+              <input type="text" class="form-control rounded-4" id="sokhung" name="sokhung">
+            </div>
+            <!--  -->
+          </div>
+          <!-- -->
+          <div class="form-group col-md-1"></div>
+          <!-- Cột 2  -->
+          <div class="form-group col-md-5">
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Hãng xe</label>
+              <select class="form-control rounded-4" id="exampleFormControlSelect1">
+                <option>Audi</option>
+                <option>Toyota</option>
+                <option>BMW</option>
+                <option>Mercedes</option>
+                <option>Range Rover</option>
+              </select>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+
+        <!-- buttons -->
+        <div class="form-group">
+          <div class="form-row">
+            <div class="form-group col-md-8"></div>
+            <div class="form-group col-md-2">
+              <button type="button" class="btn btn-lightning rounded-4 mb-2 mr-2" id="update-model"> <i class="fas fa-edit"></i>Cập
+                nhật</button>
+            </div>
+            <div class="form-group col-md-1">
+              <button type="button" class="btn btn-outline-lightning rounded-4 mb-2" id="exit-editModel" routerLink="/indexAdmin/modelmanager"><i
+                  class="far fa-arrow-alt-circle-left"></i> Trở về</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
