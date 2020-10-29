@@ -30,6 +30,7 @@ import { IndexAdminComponent } from './Admin/index-admin/index-admin.component';
 import { LoginAdminComponent } from './Admin/login-admin/login-admin.component';
 import { RegisterAdminComponent } from './Admin/register-admin/register-admin.component';
 
+////////////////////////////////////Client/////////////////////////////////////////
 import { IndexClientComponent } from './Client/index-client/index-client.component';
 import { HomeComponent } from './Client/home/home.component';
 import { AboutComponent } from './Client/about/about.component';
@@ -44,11 +45,13 @@ import { ServicesComponent } from './Client/services/services.component';
 
 
 const routes: Routes = [
+////////////////////////Log-In & Sign-Up////////////////////////////////
 
   {path: 'CarRental',   redirectTo: 'login', pathMatch: 'full'},
   {path: 'login', component: LoginAdminComponent},
   {path: 'register', component: RegisterAdminComponent},
-  
+
+//////////////////////////////Admin////////////////////////////////////
   {path: 'admin',   redirectTo: 'indexAdmin', pathMatch: 'full'},
   {path: 'indexAdmin', component: IndexAdminComponent, children:[
   {path: '',   redirectTo: 'dashboard', pathMatch: 'full'},
@@ -78,8 +81,8 @@ const routes: Routes = [
         {path: 'modelupdate', component: ModelUpdateComponent},
       ]},
   ]},
-
- 
+  
+//////////////////////////////Client////////////////////////////////
   {path: 'client',   redirectTo: 'indexClient', pathMatch: 'full'},
   {path: 'indexClient', component: IndexClientComponent, children:[
   {path: '',   redirectTo: 'home', pathMatch: 'full'},
@@ -94,7 +97,6 @@ const routes: Routes = [
   {path: 'services', component: ServicesComponent}
   ]},
 
-  
 ];
 
 @NgModule({
