@@ -15,21 +15,28 @@
       <div class="container">
           <div class="row">
               <!--== Single HeaderTop Start ==-->
-              <div class="col-lg-3 text-left">
+              <div class="thongtin col-lg-3 text-left">
                   <i class="fas fa-map-marker-alt"></i> 802/2, Mirpur, Dhaka
               </div>
               <!--== Single HeaderTop End ==-->
 
               <!--== Single HeaderTop Start ==-->
-              <div class="col-lg-3 text-center">
-                  <i class="fas fa-mobile-alt"></i> +1 800 345 678
+              <div class=" thongtin col-lg-3 text-center">
+                  <i class=" fas fa-mobile-alt"></i> +1 800 345 678
               </div>
               <!--== Single HeaderTop End ==-->
 
               <!--== Single HeaderTop Start ==-->
-              <div class="col-lg-3 text-center">
+              <div class="thongtin col-lg-3 text-center">
                   <i class="far fa-clock"></i> Mon-Fri 09.00 - 17.00
               </div>
+             <div class="col-lg-3 text-center">
+                <div class="btn-group" [hidden]="!showbutton" role="group" aria-label="Basic example">
+                    <button type="button"  class="btn btn-outline-primary" routerLink="/register" routerLinkActive="active">Đăng ký</button>
+                    <!-- <button type="button" class="btn btn-secondary">Middle</button> -->
+                    <button type="button" class="btn btn-dark" routerLink="/login" routerLinkActive="active">Đăng nhập</button>
+                  </div>
+             </div>
               <!--== Single HeaderTop End ==-->
 
                <!--== Single HeaderTop Start ==-->
@@ -98,15 +105,15 @@
                   </nav>
               </div>
               <div class="col-lg-3 d-none d-xl-block">
-                  <nav class="sb-topnav navbar navbar-expand">
+                  <nav [hidden]="!showinfor" class="sb-topnav navbar navbar-expand">
                       <ul class="navbar-nav ml-auto ml-md-0">
                           <li class="nav-item dropdown">
                               <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   <i class="fas fa-user fa-fw"></i> Nguyễn Tiến Lực</a>
                               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                                  <a class="dropdown-item" routerLink="/indexClient/information" routerLinkActive="active" style="color: #000;"><i class="far fa-address-card"></i>  Thông tin cá nhân</a>
+                                  <a class="dropdown-item" href="/CarRental/information" routerLinkActive="active" style="color: #000;"><i class="far fa-address-card"></i>  Thông tin cá nhân</a>
                                   <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item"  routerLink="/CarRental" routerLinkActive="active" style="color: #000;"><i class="fas fa-sign-out-alt"></i>  Đăng xuất</a>
+                                  <a class="dropdown-item" href="/CarRental" routerLinkActive="active" style="color: #000;"><i class="fas fa-sign-out-alt"></i>  Đăng xuất</a>
                               </div>
                           </li>
                       </ul>

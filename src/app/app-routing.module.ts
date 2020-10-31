@@ -47,9 +47,25 @@ import { ServicesComponent } from './Client/services/services.component';
 const routes: Routes = [
 ////////////////////////Log-In & Sign-Up////////////////////////////////
 
-  {path: 'CarRental',   redirectTo: 'login', pathMatch: 'full'},
+  {path: '',   redirectTo: 'CarRental', pathMatch: 'full'},
   {path: 'login', component: LoginAdminComponent},
   {path: 'register', component: RegisterAdminComponent},
+
+  //////////////////////////////Client////////////////////////////////
+  {path: '',   redirectTo: 'CarRental', pathMatch: 'full'},
+  {path: 'CarRental', component: IndexClientComponent, children:[
+  {path: '',   redirectTo: 'home', pathMatch: 'full'},
+  {path: 'home', component: HomeComponent},
+  {path: 'about', component: AboutComponent},
+  {path: 'blog', component: BlogComponent},
+  {path: 'blogdetail', component: BlogDetailComponent},
+  {path: 'car', component: CarComponent},
+  {path: 'detail', component: CarDetailComponent},
+  {path: 'contact', component: ContactComponent},
+  {path: 'information', component: InformationComponent},
+  {path: 'services', component: ServicesComponent}
+  ]},
+
 
 //////////////////////////////Admin////////////////////////////////////
   {path: 'admin',   redirectTo: 'indexAdmin', pathMatch: 'full'},
@@ -82,21 +98,6 @@ const routes: Routes = [
       ]},
   ]},
   
-//////////////////////////////Client////////////////////////////////
-  {path: 'client',   redirectTo: 'indexClient', pathMatch: 'full'},
-  {path: 'indexClient', component: IndexClientComponent, children:[
-  {path: '',   redirectTo: 'home', pathMatch: 'full'},
-  {path: 'home', component: HomeComponent},
-  {path: 'about', component: AboutComponent},
-  {path: 'blog', component: BlogComponent},
-  {path: 'blogdetail', component: BlogDetailComponent},
-  {path: 'car', component: CarComponent},
-  {path: 'detail', component: CarDetailComponent},
-  {path: 'contact', component: ContactComponent},
-  {path: 'information', component: InformationComponent},
-  {path: 'services', component: ServicesComponent}
-  ]},
-
 ];
 
 @NgModule({

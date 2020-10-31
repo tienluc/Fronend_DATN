@@ -28,7 +28,9 @@
             ],
             "styles": [
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
               "src/assets/Admin/lightning-admin.scss",
+              // "src/assets/client/client-css/client-bootstrap.min.css",
               "src/assets/client/client-style.css"
             ],
             "scripts": []

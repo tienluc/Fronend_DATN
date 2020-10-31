@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./index-client.component.scss']
 })
 export class IndexClientComponent implements OnInit {
-
-  constructor() { }
+  showbutton: boolean;
+  showinfor: boolean;
+  constructor() { 
+    // this.showbutton=false;
+    this.showbutton=false;
+    this.showinfor =true;
+  }
 
   ngOnInit() {
   }
-
 }
